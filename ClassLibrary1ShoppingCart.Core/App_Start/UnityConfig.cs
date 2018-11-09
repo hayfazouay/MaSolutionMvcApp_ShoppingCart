@@ -2,7 +2,7 @@ using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
 
-namespace ClassLibrary1ShoppingCart.Core
+namespace ShoppingCart.Core
 {
     public static class UnityConfig
     {

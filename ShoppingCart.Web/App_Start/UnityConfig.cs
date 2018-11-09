@@ -1,5 +1,5 @@
-using ClassLibrary1ShoppingCart.Core.Domain;
-using ClassLibrary1ShoppingCart.Core.Facade;
+using ShoppingCart.Core.Domain;
+using ShoppingCart.Core.Facade;
 using Moq;
 using System.Collections.Generic;
 using System.Web.Mvc;

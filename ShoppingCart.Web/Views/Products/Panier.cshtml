@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ShoppingCart.Core.Domain.Item>
+
+@{
+    ViewBag.Title = "Panier";
+}
+
+<h2>Etat de Votre Panier</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Product.PhotoFile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="~/Content/Images/@item.Product.PhotoFile" width="60" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        
+       
+    </tr>
+}
+
+</table>
+@Html.ActionLink("Continue your shopping", "Index", new { /* id=item.PrimaryKey */ })
+
+

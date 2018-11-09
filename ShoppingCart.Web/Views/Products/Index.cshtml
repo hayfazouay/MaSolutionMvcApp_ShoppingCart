@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ClassLibrary1ShoppingCart.Core.Domain.Product>
+﻿@model IEnumerable<ShoppingCart.Core.Domain.Product>
 
 @{
     ViewBag.Title = "Index";
@@ -37,9 +37,7 @@
             @Html.DisplayFor(modelItem => item.UnitPrice)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+            @Html.ActionLink("Ajouter au panier", "AddToCart", new { id=item.ProductId })
         </td>
     </tr>
 }

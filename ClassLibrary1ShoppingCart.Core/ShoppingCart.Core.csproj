@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Domain\Item.cs" />
     <Compile Include="Domain\Product.cs" />
     <Compile Include="Facade\IProductsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

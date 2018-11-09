@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1ShoppingCart.Core.Domain
+namespace ShoppingCart.Core.Domain
 {
     public class Product
     {

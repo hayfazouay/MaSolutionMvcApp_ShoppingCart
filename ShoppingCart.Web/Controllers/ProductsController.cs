@@ -11,6 +11,10 @@ namespace ShoppingCart.Web.Controllers
     {
         private IProductsRepository repo; // sera injecté par Unity
 
+        public ProductsController(IProductsRepository repo)
+        {
+            this.repo = repo;
+        }
         public ActionResult Index()
         {
             return View(repo.FindAll());
